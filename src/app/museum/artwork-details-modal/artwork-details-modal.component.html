@@ -1,0 +1,55 @@
+<div class="modal-header">
+    <div class="pull-left">
+        <h4 class="modal-title ">Change Invoice</h4>
+    </div>
+
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+        <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="detials">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="art-image">
+                    <img [src]="modalData?.primaryImage">
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-2">
+                    <h5>Title</h5>
+                    <p>{{modalData?.title}}</p>
+                </div>
+                <div class="mb-2">
+                    <h5>Region</h5>
+                    <p>{{modalData?.region}}</p>
+                </div>
+                <div class="mb-2">
+                    <h5>CreditLine</h5>
+                    <p>{{modalData?.creditLine}}</p>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="mb-2">
+                    <h5>Period</h5>
+                    <p>{{modalData?.period}}</p>
+                </div>
+                <div class="mb-2">
+                    <h5>Repository</h5>
+                    <p>{{modalData?.repository}}</p>
+                </div>
+                
+                <div class="mb-2">
+                    <h5>Department</h5>
+                    <p>{{modalData?.department}}</p>
+                </div>
+                
+            </div>
+
+        </div>
+            
+
+       
+    </div>
+</div>

@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.owl-theme .owl-nav{
+    background-color: transparent !important;
+}
+.owl-prev{
+    background: transparent !important;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.owl-next{
+    background: transparent !important;
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translateY(-50%);
+}
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
